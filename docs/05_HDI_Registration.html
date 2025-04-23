@@ -1,0 +1,434 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HDI Registration &mdash; miaaim 0.0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/nbsphinx-code-cells.css?v=2aa19091" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=9aaca0cf" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=d45e8c67"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: 5DADE2" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            miaaim
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Nextflow User Guide / Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#linux-os-x">Linux / OS X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#windows">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installing-miaaim-in-python">Installing MIAAIM in Python</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#tma013">TMA013</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="quick_start.html#download-data">Download Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="quick_start.html#image-preprocessing">Image Preprocessing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="quick_start.html#manual-image-registration">Manual Image Registration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="quick_start.html#image-registration">Image Registration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="quick_start.html#image-segmentation">Image Segmentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="directory.html">Folder Structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="directory.html#input">input</a></li>
+<li class="toctree-l2"><a class="reference internal" href="directory.html#hdiprep">hdiprep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="directory.html#hdireg">hdireg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="directory.html#docs">docs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="workflows.html">Workflows</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="workflows.html#image-preparation-hdiprep">Image Preparation (HDIprep)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="workflows.html#yaml-parameter-file-input-basics">YAML Parameter File Input Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workflows.html#high-parameter-image-processing">High-Parameter Image Processing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workflows.html#histological-image-processing">Histological Image Processing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workflows.html#hdiprep-implementation-guide">HDIprep Implementation Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="workflows.html#image-registration-hdireg">Image Registration (HDIreg)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="workflows.html#hdireg-implementation-guide">HDIreg Implementation Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="workflows.html#tissue-state-modelling-patchmap">Tissue State Modelling (PatchMAP)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflows.html#cross-system-tissue-information-transfer-i-patchmap">Cross-System/Tissue Information Transfer (i-PatchMAP)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="parameters.html">Parameter Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="parameters.html#nextflow">Nextflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parameters.html#hdiprep">HDIprep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parameters.html#hdireg">HDIreg</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#docker-singularity-containers">Docker/Singularity Containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#resource-allocation">Resource Allocation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="configuration.html#memory">Memory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="configuration.html#cpu">CPU</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html#preset-resource-allocation-options">Preset Resource Allocation Options</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="provenance.html">Provenance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#adding-imaging-modalities">Adding Imaging Modalities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#importing-new-modalities-adding-file-formats">Importing New Modalities / Adding File Formats</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Quick Start Notebooks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="02_1_MSI_ExportHDF5.html">MSI Export to HDF5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_2_HDI_MSI_Preprocess.html">MSI HDIpreprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_HE_preprocess_TIFF.html">HE TMA core extraction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_1_ilastikTraining.html">Training Ilastik</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_2_ilastikHeadless.html">Ilastik run without interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_HDI_Segmentation.html">HDI Segmentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_1_Quant.html">Single Cell Quantification</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">MIAAIM in Python</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="python.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="python.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="python.html#usage-without-docker-install-with-pip">Usage without Docker / Install with Pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="python.html#reproducibility-with-pip">Reproducibility with Pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="python.html#docker">Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="python.html#hdi-utility-functions-hdi-utils">HDI Utility Functions (hdi-utils)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="python-workflows.html">Workflow Implementations in Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="python-workflows.html#image-preparation-hdiprep">Image Preparation (HDIprep)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="python-workflows.html#steady-state-umap-compression">Steady-state UMAP compression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-workflows.html#histological-image-processing">Histological Image Processing</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="python-workflows.html#image-registration-hdireg">Image Registration (HDIreg)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="python-workflows.html#elastix">elastix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-workflows.html#transformix">transformix</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="python-workflows.html#tissue-state-modeling-patchmap">Tissue State Modeling (PatchMAP)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="python-workflows.html#cross-system-tissue-information-transfer-i-patchmap">Cross-System/Tissue Information Transfer (i-PatchMAP)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebook Zoo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyter.html#image-preparation-hdiprep">Image Preparation (HDIprep)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter.html#image-registration-hdireg">Image Registration (HDIreg)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter.html#tissue-state-modelling-patchmap">Tissue State Modelling (PatchMAP)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.html#image-preparation-hdiprep">Image Preparation (HDIprep)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api.html#hdi-prep">hdi_prep</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#utils">utils</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#image-registration-hdireg">Image Registration (HDIreg)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api.html#elastix">elastix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#transformix">transformix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#id1">utils</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#tissue-state-modeling-patchmap">Tissue State Modeling (PatchMAP)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#cross-system-tissue-information-transfer-i-patchmap">Cross-System/Tissue Information Transfer (i-PatchMAP)</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Background on MIAAIM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="elastix.html">Elastix Basics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="elastix.html#registration-parameter-files-elastix">Registration Parameter Files (Elastix)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="elastix.html#multi-channel-input">Multi-channel Input</a></li>
+<li class="toctree-l3"><a class="reference internal" href="elastix.html#single-channel-input">Single-channel Input</a></li>
+<li class="toctree-l3"><a class="reference internal" href="elastix.html#help-the-registration-with-manual-landmarks">Help the Registration with Manual Landmarks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="elastix.html#outputs">Outputs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="elastix.html#applying-transformations-transformix">Applying Transformations (Transformix)</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Roadmap</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="roadmap.html">MIAAIM Roadmap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="roadmap.html#miaaim-0-0-1">MIAAIM 0.0.1</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contributing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#adding-imaging-modalities">Adding Imaging Modalities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#importing-new-modalities-adding-file-formats">Importing New Modalities / Adding File Formats</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contact</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact Information</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Funding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="funding.html">Funding</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">License</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Acknowledgements</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">Acknowledgements</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: 5DADE2" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">miaaim</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">HDI Registration</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/JoshuaHess12/miaaim/blob/0.0.105_HDI_Registration.ipynb" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="HDI-Registration">
+<h1>HDI Registration<a class="headerlink" href="#HDI-Registration" title="Link to this heading"></a></h1>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Extract cores from TMA using morphological operations</span>
+<span class="c1"># import custom modules</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">miaaim.reg.elastix</span><span class="w"> </span><span class="kn">import</span> <span class="n">Elastix</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">miaaim.reg._utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">FormatFijiLandmarkPoints</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">miaaim.io.imread</span><span class="w"> </span><span class="kn">import</span> <span class="n">_import</span>
+
+<span class="c1"># import other modules</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="c1"># check versions and environment executable</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+
+<span class="n">sys</span><span class="o">.</span><span class="n">version</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">executable</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[1]</span><span class="ansi-green-fg">, line 3</span>
+<span class="ansi-green-fg">      1</span> <span style="color: rgb(95,135,135)"># Extract cores from TMA using morphological operations</span>
+<span class="ansi-green-fg">      2</span> <span style="color: rgb(95,135,135)"># import custom modules</span>
+<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">3</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-blue-intense-fg ansi-bold">miaaim</span><span class="ansi-blue-intense-fg ansi-bold">.</span><span class="ansi-blue-intense-fg ansi-bold">reg</span><span class="ansi-blue-intense-fg ansi-bold">.</span><span class="ansi-blue-intense-fg ansi-bold">elastix</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,135,0)">import</span> Elastix
+<span class="ansi-green-fg">      4</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-blue-intense-fg ansi-bold">miaaim</span><span class="ansi-blue-intense-fg ansi-bold">.</span><span class="ansi-blue-intense-fg ansi-bold">reg</span><span class="ansi-blue-intense-fg ansi-bold">.</span><span class="ansi-blue-intense-fg ansi-bold">_utils</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,135,0)">import</span> FormatFijiLandmarkPoints
+<span class="ansi-green-fg">      5</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-blue-intense-fg ansi-bold">miaaim</span><span class="ansi-blue-intense-fg ansi-bold">.</span><span class="ansi-blue-intense-fg ansi-bold">io</span><span class="ansi-blue-intense-fg ansi-bold">.</span><span class="ansi-blue-intense-fg ansi-bold">imread</span><span style="color: rgb(188,188,188)"> </span><span class="ansi-bold" style="color: rgb(0,135,0)">import</span> _import
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;miaaim&#39;
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">RegisterDataSet</span><span class="p">(</span><span class="n">core_name</span><span class="p">,</span> <span class="n">data_folder</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Helper function to perform MSI to IMC registration</span>
+<span class="sd">    with H&amp;E intermediate.</span>
+
+<span class="sd">    core_name: string indicating core name (in data folder)</span>
+
+<span class="sd">    data_folder: Pathlib object indicating data folder for project</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># set path to core folder (root_folder below)</span>
+    <span class="n">core_folder</span> <span class="o">=</span> <span class="n">data_folder</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">core_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="c1"># set the path to the imaging data</span>
+    <span class="n">he</span> <span class="o">=</span> <span class="n">data_folder</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">core_name</span><span class="si">}</span><span class="s2">/preprocessing/he/</span><span class="si">{</span><span class="n">core_name</span><span class="si">}</span><span class="s2">_core.nii&quot;</span><span class="p">)</span>
+    <span class="n">msi</span> <span class="o">=</span> <span class="n">data_folder</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">core_name</span><span class="si">}</span><span class="s2">/preprocessing/msi/</span><span class="si">{</span><span class="n">core_name</span><span class="si">}</span><span class="s2">_core_msi_UMAP.nii&quot;</span><span class="p">)</span>
+    <span class="n">imc</span> <span class="o">=</span> <span class="n">data_folder</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">core_name</span><span class="si">}</span><span class="s2">/preprocessing/imc/</span><span class="si">{</span><span class="n">core_name</span><span class="si">}</span><span class="s2">_core_UMAP.nii&quot;</span><span class="p">)</span>
+
+    <span class="c1"># set path to original MSI data to transform</span>
+    <span class="n">input_msi</span> <span class="o">=</span> <span class="n">core_folder</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;input/msi/</span><span class="si">{</span><span class="n">core_name</span><span class="si">}</span><span class="s2">.hdf5&quot;</span><span class="p">)</span>
+
+    <span class="c1"># set output directory</span>
+    <span class="n">registration_dir</span> <span class="o">=</span> <span class="n">data_folder</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">core_name</span><span class="si">}</span><span class="s2">/registration&quot;</span><span class="p">)</span>
+
+    <span class="c1"># create landmark text files</span>
+    <span class="n">he_landmarks</span> <span class="o">=</span> <span class="n">FormatFijiLandmarkPoints</span><span class="p">(</span><span class="n">registration_dir</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">core_name</span><span class="si">}</span><span class="s2">_core.txt&quot;</span><span class="p">),</span>
+                                            <span class="n">selection_type</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">)</span>
+    <span class="n">msi_landmarks</span> <span class="o">=</span> <span class="n">FormatFijiLandmarkPoints</span><span class="p">(</span><span class="n">registration_dir</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">core_name</span><span class="si">}</span><span class="s2">_core_msi_UMAP.txt&quot;</span><span class="p">),</span>
+                                             <span class="n">selection_type</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">)</span>
+    <span class="n">imc_landmarks</span> <span class="o">=</span> <span class="n">FormatFijiLandmarkPoints</span><span class="p">(</span><span class="n">registration_dir</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">core_name</span><span class="si">}</span><span class="s2">_core_UMAP.txt&quot;</span><span class="p">),</span>
+                                             <span class="n">selection_type</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">)</span>
+
+    <span class="c1"># set parameter files</span>
+    <span class="n">landmark_p_msi_he</span> <span class="o">=</span> <span class="p">[</span><span class="n">registration_dir</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;10_landmark_affine.txt&quot;</span><span class="p">),</span>
+                         <span class="n">registration_dir</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;11_landmark_bspline.txt&quot;</span><span class="p">)]</span>
+    <span class="n">p_msi_he</span> <span class="o">=</span> <span class="p">[</span><span class="n">registration_dir</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;12_aMI_affine.txt&quot;</span><span class="p">),</span>
+                <span class="n">registration_dir</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;13_aMI_bspline.txt&quot;</span><span class="p">)]</span>
+    <span class="n">landmark_p_he_imc</span> <span class="o">=</span> <span class="p">[</span><span class="n">registration_dir</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;20_landmark_affine.txt&quot;</span><span class="p">),</span>
+                         <span class="n">registration_dir</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;21_landmark_bspline.txt&quot;</span><span class="p">)]</span>
+    <span class="n">p_he_imc</span> <span class="o">=</span> <span class="p">[</span><span class="n">registration_dir</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;22_aMI_affine.txt&quot;</span><span class="p">),</span>
+                <span class="n">registration_dir</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;23_aMI_bspline.txt&quot;</span><span class="p">)]</span>
+
+    <span class="c1"># create elastix registration class</span>
+    <span class="n">msi_he_reg</span> <span class="o">=</span> <span class="n">Elastix</span><span class="p">(</span><span class="n">root_folder</span><span class="o">=</span><span class="n">core_folder</span><span class="p">,</span>
+                         <span class="n">name</span><span class="o">=</span><span class="s2">&quot;msi-he&quot;</span><span class="p">,</span>
+                         <span class="n">resume</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="c1"># perform registration procedure</span>
+    <span class="n">msi_he_reg</span><span class="o">.</span><span class="n">Register</span><span class="p">(</span><span class="n">fixed</span><span class="o">=</span><span class="n">he</span><span class="p">,</span>
+                        <span class="n">moving</span><span class="o">=</span><span class="n">msi</span><span class="p">,</span>
+                        <span class="n">p</span><span class="o">=</span><span class="n">p_msi_he</span><span class="p">,</span>
+                        <span class="n">landmark_p</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                        <span class="n">out_dir</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                        <span class="n">fp</span><span class="o">=</span><span class="n">he_landmarks</span><span class="p">,</span>
+                        <span class="n">mp</span><span class="o">=</span><span class="n">msi_landmarks</span><span class="p">,</span>
+                        <span class="n">fMask</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                        <span class="n">multichannel</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="c1"># transform UMAP msi representation for visualization</span>
+    <span class="n">msi_he_reg</span><span class="o">.</span><span class="n">Transform</span><span class="p">(</span><span class="n">in_im</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                         <span class="n">out_dir</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                         <span class="n">tps</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                         <span class="n">target_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                         <span class="n">pad</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                         <span class="n">trim</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                         <span class="n">crops</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                         <span class="n">out_ext</span><span class="o">=</span><span class="s2">&quot;.nii&quot;</span><span class="p">)</span>
+
+    <span class="c1"># export QC information</span>
+    <span class="n">msi_he_reg</span><span class="o">.</span><span class="n">QC</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># set path to data folder</span>
+<span class="n">data_folder</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;/opt/miaaim-20220912-TMA4/data&quot;</span><span class="p">)</span>
+<span class="c1"># get list of all core names in the data folder</span>
+<span class="c1"># check to make sure we have the core folders for only prostate samples which have</span>
+<span class="c1"># multimodal data (here, indicated by /registration folder)</span>
+<span class="n">core_folders</span> <span class="o">=</span> <span class="p">[</span><span class="n">data_folder</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">data_folder</span><span class="p">)</span> <span class="k">if</span> <span class="n">data_folder</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="o">.</span><span class="n">is_dir</span><span class="p">()]</span>
+<span class="n">core_folders</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">core_folders</span> <span class="k">if</span> <span class="n">Path</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2">/registration&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">is_dir</span><span class="p">()]</span>
+
+<span class="c1"># iterate through data set and register</span>
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">core_folders</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]:</span>
+    <span class="c1"># register</span>
+    <span class="n">RegisterDataSet</span><span class="p">(</span><span class="n">core_name</span><span class="o">=</span><span class="n">c</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">data_folder</span><span class="o">=</span><span class="n">data_folder</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[3]</span><span class="ansi-green-fg">, line 2</span>
+<span class="ansi-green-fg">      1</span> <span style="color: rgb(95,135,135)"># set path to data folder</span>
+<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">2</span> data_folder = <span class="ansi-yellow-bg">Path</span>(<span class="ansi-yellow-fg">&#34;</span><span class="ansi-yellow-fg">/opt/miaaim-20220912-TMA4/data</span><span class="ansi-yellow-fg">&#34;</span>)
+<span class="ansi-green-fg">      3</span> <span style="color: rgb(95,135,135)"># get list of all core names in the data folder</span>
+<span class="ansi-green-fg">      4</span> <span style="color: rgb(95,135,135)"># check to make sure we have the core folders for only prostate samples which have</span>
+<span class="ansi-green-fg">      5</span> <span style="color: rgb(95,135,135)"># multimodal data (here, indicated by /registration folder)</span>
+<span class="ansi-green-fg">      6</span> core_folders = [data_folder.joinpath(c) <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> c <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> os.listdir(data_folder) <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> data_folder.joinpath(c).is_dir()]
+
+<span class="ansi-red-fg">NameError</span>: name &#39;Path&#39; is not defined
+</pre></div></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Joshua Hess.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
