@@ -11,7 +11,7 @@ MIAAIM: multi-modal image alignment and analysis by information manifolds
 
    .. container:: leftside
 
-      .. figure:: images/Figure1-5.jpg
+      .. figure:: images/2025_Figure1.png
          :width: 90%
 
    .. container:: rightside
