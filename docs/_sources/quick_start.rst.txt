@@ -56,8 +56,11 @@ reference and run the following jupyter notebooks:
 ::
 
 01_HDI_Preprocessing.ipynb
+
 02_1_MSI_ExportHDF5.ipynb
+
 02_2_HDI_MSI_Preprocess.ipynb
+
 03_HE_preprocess_TIFF.ipynb
 
 Manual Image Registration
@@ -78,7 +81,9 @@ the moving image to the fixed image:
 ::
 
 04_1_ilastikTraining.ipynb
+
 04_2_ilastikHeadless.ipynb
+
 05_HDI_Registration.py
 
 Image Segmentation
@@ -88,4 +93,5 @@ Image Segmentation
 ::
 
 06_HDI_Segmentation.ipynb
+
 07_1_Quant.ipynb
