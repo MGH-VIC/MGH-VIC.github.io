@@ -5,7 +5,7 @@
    "id": "e371715b",
    "metadata": {},
    "source": [
-    "# HE TMA core extraction"
+    "# HE TMA Core Extraction"
    ]
   },
   {
@@ -43,9 +43,7 @@
    "id": "358950a7",
    "metadata": {},
    "source": [
-    "------\n",
-    "### Read core labels and export individual ROIs\n",
-    "------"
+    "### Read Core Labels and Export Individual ROIs"
    ]
   },
   {
@@ -95,14 +93,6 @@
     "    # export image as tiff\n",
     "    skimage.io.imsave(heCoreFolder.joinpath(f\"{n}.tiff\"),heCrop)"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "98e52266",
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {

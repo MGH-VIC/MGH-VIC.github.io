@@ -5,7 +5,9 @@
    "id": "45f6f932-5413-4191-b23c-34199ad9049e",
    "metadata": {},
    "source": [
-    "# Ilastik run without interface"
+    "# Ilastik Generate \n",
+    "\n",
+    "- Apply Model to Full Images"
    ]
   },
   {
@@ -7719,14 +7721,6 @@
     "    # export QC information\n",
     "    IL.QC()"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "5da9d3d5",
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {

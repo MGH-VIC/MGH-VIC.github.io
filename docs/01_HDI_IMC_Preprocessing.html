@@ -47,7 +47,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Nextflow User Guide / Tutorials</span></p>
+              <p class="caption" role="heading"><span class="caption-text">User Guide / Tutorials</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="installation.html#linux-os-x">Linux / OS X</a></li>
@@ -90,23 +90,10 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="parameters.html">Parameter Reference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="parameters.html#nextflow">Nextflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="parameters.html#hdiprep">HDIprep</a></li>
 <li class="toctree-l2"><a class="reference internal" href="parameters.html#hdireg">HDIreg</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#docker-singularity-containers">Docker/Singularity Containers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#resource-allocation">Resource Allocation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="configuration.html#memory">Memory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="configuration.html#cpu">CPU</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#preset-resource-allocation-options">Preset Resource Allocation Options</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="provenance.html">Provenance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="contributing.html#adding-imaging-modalities">Adding Imaging Modalities</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="contributing.html#importing-new-modalities-adding-file-formats">Importing New Modalities / Adding File Formats</a></li>
@@ -117,15 +104,35 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Quick Start Notebooks</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">IMC HDIpreprocessing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_1_MSI_ExportHDF5.html">MSI Export to HDF5</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_2_HDI_MSI_Preprocess.html">MSI HDIpreprocessing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_HE_preprocess_TIFF.html">HE TMA core extraction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_1_ilastikTraining.html">Training Ilastik</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_2_ilastikHeadless.html">Ilastik run without interface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_HDI_Registration.html">HDI Registration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_HDI_Segmentation.html">HDI Segmentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_1_Quant.html">Single Cell Quantification</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">IMC HDIpreprocessing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Set-paths-to-data-and-get-marker-information">Set paths to data and get marker information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Preprocessing-and-quality-control">Preprocessing and quality control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Create-Mask">Create Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Fill-Mask">Fill Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Apply-Mask-to-IMC-image">Apply Mask to IMC image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Create-UMAP-embedding-of-masked-IMC-image">Create UMAP embedding of masked IMC image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Export-Embedding">Export Embedding</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_1_MSI_ExportHDF5.html">MSI Export to HDF5</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_1_MSI_ExportHDF5.html#Set-paths-to-csv-data-with-root-mean-square-normalized-MSI-data">Set paths to csv data with root mean square normalized MSI data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_1_MSI_ExportHDF5.html#Convert-to-HDF5-and-export">Convert to HDF5 and export</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_2_HDI_MSI_Preprocess.html">MSI HDIpreprocessing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_2_HDI_MSI_Preprocess.html#Set-paths-to-data-and-get-marker-information">Set paths to data and get marker information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_2_HDI_MSI_Preprocess.html#Iterate-Through-Cores-and-Extract-Data">Iterate Through Cores and Extract Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03_HE_preprocess_TIFF.html">HE TMA Core Extraction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_HE_preprocess_TIFF.html#Read-Core-Labels-and-Export-Individual-ROIs">Read Core Labels and Export Individual ROIs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04_ilastikTraining.html">Training Ilastik</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_ilastikHeadless.html">Ilastik Generate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_HDI_Registration.html">HDI Registration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_HDI_Segmentation.html">HDI Segmentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_Quant.html">Single Cell Quantification</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">MIAAIM in Python</span></p>
 <ul>
@@ -152,32 +159,9 @@
 <li class="toctree-l2"><a class="reference internal" href="python-workflows.html#cross-system-tissue-information-transfer-i-patchmap">Cross-System/Tissue Information Transfer (i-PatchMAP)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebook Zoo</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="jupyter.html#image-preparation-hdiprep">Image Preparation (HDIprep)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="jupyter.html#image-registration-hdireg">Image Registration (HDIreg)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="jupyter.html#tissue-state-modelling-patchmap">Tissue State Modelling (PatchMAP)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="api.html#image-preparation-hdiprep">Image Preparation (HDIprep)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="api.html#hdi-prep">hdi_prep</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api.html#utils">utils</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#image-registration-hdireg">Image Registration (HDIreg)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="api.html#elastix">elastix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api.html#transformix">transformix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api.html#id1">utils</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#tissue-state-modeling-patchmap">Tissue State Modeling (PatchMAP)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#cross-system-tissue-information-transfer-i-patchmap">Cross-System/Tissue Information Transfer (i-PatchMAP)</a></li>
-</ul>
-</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Background on MIAAIM</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="elastix.html">Elastix Basics</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="elastix.html#registration-parameter-files-elastix">Registration Parameter Files (Elastix)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="elastix.html#multi-channel-input">Multi-channel Input</a></li>
@@ -190,13 +174,6 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Roadmap</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="roadmap.html">MIAAIM Roadmap</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="roadmap.html#miaaim-0-0-1">MIAAIM 0.0.1</a></li>
-</ul>
-</li>
-</ul>
 <p class="caption" role="heading"><span class="caption-text">Contributing</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a><ul>
@@ -206,10 +183,6 @@
 </li>
 </ul>
 </li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">FAQs</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Contact</span></p>
 <ul>
@@ -254,6 +227,15 @@
              
   <section id="IMC-HDIpreprocessing">
 <h1>IMC HDIpreprocessing<a class="headerlink" href="#IMC-HDIpreprocessing" title="Link to this heading"></a></h1>
+<p>This preprocessing notebook:</p>
+<ul class="simple">
+<li><p>Loads the IMC image</p></li>
+<li><p>Creates a mask</p></li>
+<li><p>Fills the mask</p></li>
+<li><p>Applies the mask to the image</p></li>
+<li><p>Creates the UMAP embedding</p></li>
+<li><p>Exports the embedding</p></li>
+</ul>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -290,12 +272,8 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 &#39;/opt/conda/envs/miaaim-dev/bin/python&#39;
 </pre></div></div>
 </div>
-<table class="docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p>### Set paths to data and get marker information</p></td>
-</tr>
-</tbody>
-</table>
+<section id="Set-paths-to-data-and-get-marker-information">
+<h2>Set paths to data and get marker information<a class="headerlink" href="#Set-paths-to-data-and-get-marker-information" title="Link to this heading"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -317,12 +295,9 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 </pre></div>
 </div>
 </div>
-<table class="docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p>### Preprocessing and quality control</p></td>
-</tr>
-</tbody>
-</table>
+</section>
+<section id="Preprocessing-and-quality-control">
+<h2>Preprocessing and quality control<a class="headerlink" href="#Preprocessing-and-quality-control" title="Link to this heading"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -409,6 +384,9 @@ PROCESSING DATA
 
 </pre></div></div>
 </div>
+</section>
+<section id="Create-Mask">
+<h2>Create Mask<a class="headerlink" href="#Create-Mask" title="Link to this heading"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
@@ -422,9 +400,12 @@ PROCESSING DATA
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/01_HDI_IMC_Preprocessing_10_0.png" src="_images/01_HDI_IMC_Preprocessing_10_0.png" />
+<img alt="_images/01_HDI_IMC_Preprocessing_11_0.png" src="_images/01_HDI_IMC_Preprocessing_11_0.png" />
 </div>
 </div>
+</section>
+<section id="Fill-Mask">
+<h2>Fill Mask<a class="headerlink" href="#Fill-Mask" title="Link to this heading"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
@@ -449,9 +430,12 @@ Fill: filling holes of processed mask
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/01_HDI_IMC_Preprocessing_11_1.png" src="_images/01_HDI_IMC_Preprocessing_11_1.png" />
+<img alt="_images/01_HDI_IMC_Preprocessing_13_1.png" src="_images/01_HDI_IMC_Preprocessing_13_1.png" />
 </div>
 </div>
+</section>
+<section id="Apply-Mask-to-IMC-image">
+<h2>Apply Mask to IMC image<a class="headerlink" href="#Apply-Mask-to-IMC-image" title="Link to this heading"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
@@ -478,7 +462,7 @@ ApplyMask: applying processed mask to image
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/01_HDI_IMC_Preprocessing_12_1.png" src="_images/01_HDI_IMC_Preprocessing_12_1.png" />
+<img alt="_images/01_HDI_IMC_Preprocessing_15_1.png" src="_images/01_HDI_IMC_Preprocessing_15_1.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -507,6 +491,9 @@ Exporting f/opt/miaaim-20220912-TMA4/data/ROI022_PROSTATE_TMA013/preprocessing/i
 Finished exporting /opt/miaaim-20220912-TMA4/data/ROI022_PROSTATE_TMA013/preprocessing/imc/ROI022_PROSTATE_TMA013_core.ome.tiff
 </pre></div></div>
 </div>
+</section>
+<section id="Create-UMAP-embedding-of-masked-IMC-image">
+<h2>Create UMAP embedding of masked IMC image<a class="headerlink" href="#Create-UMAP-embedding-of-masked-IMC-image" title="Link to this heading"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
@@ -629,9 +616,12 @@ Finished spatial mapping
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/01_HDI_IMC_Preprocessing_14_1.png" src="_images/01_HDI_IMC_Preprocessing_14_1.png" />
+<img alt="_images/01_HDI_IMC_Preprocessing_18_1.png" src="_images/01_HDI_IMC_Preprocessing_18_1.png" />
 </div>
 </div>
+</section>
+<section id="Export-Embedding">
+<h2>Export Embedding<a class="headerlink" href="#Export-Embedding" title="Link to this heading"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
@@ -701,14 +691,7 @@ Exporting /opt/miaaim-20220912-TMA4/data/ROI022_PROSTATE_TMA013/docs/parameters/
 Exporting /opt/miaaim-20220912-TMA4/data/ROI022_PROSTATE_TMA013/docs/provenance/miaaim-preprocessing-imc.sh
 </pre></div></div>
 </div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-</div>
+</section>
 </section>
 
 

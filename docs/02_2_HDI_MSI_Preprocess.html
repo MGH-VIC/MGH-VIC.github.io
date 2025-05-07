@@ -24,7 +24,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="HE TMA core extraction" href="03_HE_preprocess_TIFF.html" />
+    <link rel="next" title="HE TMA Core Extraction" href="03_HE_preprocess_TIFF.html" />
     <link rel="prev" title="MSI Export to HDF5" href="02_1_MSI_ExportHDF5.html" /> 
 </head>
 
@@ -47,7 +47,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Nextflow User Guide / Tutorials</span></p>
+              <p class="caption" role="heading"><span class="caption-text">User Guide / Tutorials</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="installation.html#linux-os-x">Linux / OS X</a></li>
@@ -90,23 +90,10 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="parameters.html">Parameter Reference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="parameters.html#nextflow">Nextflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="parameters.html#hdiprep">HDIprep</a></li>
 <li class="toctree-l2"><a class="reference internal" href="parameters.html#hdireg">HDIreg</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#docker-singularity-containers">Docker/Singularity Containers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#resource-allocation">Resource Allocation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="configuration.html#memory">Memory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="configuration.html#cpu">CPU</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#preset-resource-allocation-options">Preset Resource Allocation Options</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="provenance.html">Provenance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="contributing.html#adding-imaging-modalities">Adding Imaging Modalities</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="contributing.html#importing-new-modalities-adding-file-formats">Importing New Modalities / Adding File Formats</a></li>
@@ -117,15 +104,35 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Quick Start Notebooks</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html">IMC HDIpreprocessing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_1_MSI_ExportHDF5.html">MSI Export to HDF5</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">MSI HDIpreprocessing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_HE_preprocess_TIFF.html">HE TMA core extraction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_1_ilastikTraining.html">Training Ilastik</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_2_ilastikHeadless.html">Ilastik run without interface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_HDI_Registration.html">HDI Registration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_HDI_Segmentation.html">HDI Segmentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_1_Quant.html">Single Cell Quantification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html">IMC HDIpreprocessing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html#Set-paths-to-data-and-get-marker-information">Set paths to data and get marker information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html#Preprocessing-and-quality-control">Preprocessing and quality control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html#Create-Mask">Create Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html#Fill-Mask">Fill Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html#Apply-Mask-to-IMC-image">Apply Mask to IMC image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html#Create-UMAP-embedding-of-masked-IMC-image">Create UMAP embedding of masked IMC image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html#Export-Embedding">Export Embedding</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_1_MSI_ExportHDF5.html">MSI Export to HDF5</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_1_MSI_ExportHDF5.html#Set-paths-to-csv-data-with-root-mean-square-normalized-MSI-data">Set paths to csv data with root mean square normalized MSI data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_1_MSI_ExportHDF5.html#Convert-to-HDF5-and-export">Convert to HDF5 and export</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">MSI HDIpreprocessing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Set-paths-to-data-and-get-marker-information">Set paths to data and get marker information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Iterate-Through-Cores-and-Extract-Data">Iterate Through Cores and Extract Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03_HE_preprocess_TIFF.html">HE TMA Core Extraction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_HE_preprocess_TIFF.html#Read-Core-Labels-and-Export-Individual-ROIs">Read Core Labels and Export Individual ROIs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04_ilastikTraining.html">Training Ilastik</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_ilastikHeadless.html">Ilastik Generate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_HDI_Registration.html">HDI Registration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_HDI_Segmentation.html">HDI Segmentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_Quant.html">Single Cell Quantification</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">MIAAIM in Python</span></p>
 <ul>
@@ -152,32 +159,9 @@
 <li class="toctree-l2"><a class="reference internal" href="python-workflows.html#cross-system-tissue-information-transfer-i-patchmap">Cross-System/Tissue Information Transfer (i-PatchMAP)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebook Zoo</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="jupyter.html#image-preparation-hdiprep">Image Preparation (HDIprep)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="jupyter.html#image-registration-hdireg">Image Registration (HDIreg)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="jupyter.html#tissue-state-modelling-patchmap">Tissue State Modelling (PatchMAP)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="api.html#image-preparation-hdiprep">Image Preparation (HDIprep)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="api.html#hdi-prep">hdi_prep</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api.html#utils">utils</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#image-registration-hdireg">Image Registration (HDIreg)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="api.html#elastix">elastix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api.html#transformix">transformix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api.html#id1">utils</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#tissue-state-modeling-patchmap">Tissue State Modeling (PatchMAP)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#cross-system-tissue-information-transfer-i-patchmap">Cross-System/Tissue Information Transfer (i-PatchMAP)</a></li>
-</ul>
-</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Background on MIAAIM</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="elastix.html">Elastix Basics</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="elastix.html#registration-parameter-files-elastix">Registration Parameter Files (Elastix)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="elastix.html#multi-channel-input">Multi-channel Input</a></li>
@@ -190,13 +174,6 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Roadmap</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="roadmap.html">MIAAIM Roadmap</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="roadmap.html#miaaim-0-0-1">MIAAIM 0.0.1</a></li>
-</ul>
-</li>
-</ul>
 <p class="caption" role="heading"><span class="caption-text">Contributing</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a><ul>
@@ -206,10 +183,6 @@
 </li>
 </ul>
 </li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">FAQs</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Contact</span></p>
 <ul>
@@ -254,6 +227,7 @@
              
   <section id="MSI-HDIpreprocessing">
 <h1>MSI HDIpreprocessing<a class="headerlink" href="#MSI-HDIpreprocessing" title="Link to this heading"></a></h1>
+<p>This notebook reads the MSI data and runs an optimized form of UMAP on the data</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -292,12 +266,8 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 &#39;/opt/conda/envs/miaaim-dev/bin/python&#39;
 </pre></div></div>
 </div>
-<table class="docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p>### Set paths to data and get marker information</p></td>
-</tr>
-</tbody>
-</table>
+<section id="Set-paths-to-data-and-get-marker-information">
+<h2>Set paths to data and get marker information<a class="headerlink" href="#Set-paths-to-data-and-get-marker-information" title="Link to this heading"></a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -313,6 +283,9 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 </pre></div>
 </div>
 </div>
+</section>
+<section id="Iterate-Through-Cores-and-Extract-Data">
+<h2>Iterate Through Cores and Extract Data<a class="headerlink" href="#Iterate-Through-Cores-and-Extract-Data" title="Link to this heading"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -7355,346 +7328,339 @@ Exporting /opt/miaaim-20220912-TMA4/data/ROI070_PROSTATE_TMA070/docs/provenance/
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_97.png" src="_images/02_2_HDI_MSI_Preprocess_4_97.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_97.png" src="_images/02_2_HDI_MSI_Preprocess_5_97.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_98.png" src="_images/02_2_HDI_MSI_Preprocess_4_98.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_98.png" src="_images/02_2_HDI_MSI_Preprocess_5_98.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_99.png" src="_images/02_2_HDI_MSI_Preprocess_4_99.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_99.png" src="_images/02_2_HDI_MSI_Preprocess_5_99.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_100.png" src="_images/02_2_HDI_MSI_Preprocess_4_100.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_100.png" src="_images/02_2_HDI_MSI_Preprocess_5_100.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_101.png" src="_images/02_2_HDI_MSI_Preprocess_4_101.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_101.png" src="_images/02_2_HDI_MSI_Preprocess_5_101.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_102.png" src="_images/02_2_HDI_MSI_Preprocess_4_102.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_102.png" src="_images/02_2_HDI_MSI_Preprocess_5_102.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_103.png" src="_images/02_2_HDI_MSI_Preprocess_4_103.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_103.png" src="_images/02_2_HDI_MSI_Preprocess_5_103.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_104.png" src="_images/02_2_HDI_MSI_Preprocess_4_104.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_104.png" src="_images/02_2_HDI_MSI_Preprocess_5_104.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_105.png" src="_images/02_2_HDI_MSI_Preprocess_4_105.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_105.png" src="_images/02_2_HDI_MSI_Preprocess_5_105.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_106.png" src="_images/02_2_HDI_MSI_Preprocess_4_106.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_106.png" src="_images/02_2_HDI_MSI_Preprocess_5_106.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_107.png" src="_images/02_2_HDI_MSI_Preprocess_4_107.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_107.png" src="_images/02_2_HDI_MSI_Preprocess_5_107.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_108.png" src="_images/02_2_HDI_MSI_Preprocess_4_108.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_108.png" src="_images/02_2_HDI_MSI_Preprocess_5_108.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_109.png" src="_images/02_2_HDI_MSI_Preprocess_4_109.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_109.png" src="_images/02_2_HDI_MSI_Preprocess_5_109.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_110.png" src="_images/02_2_HDI_MSI_Preprocess_4_110.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_110.png" src="_images/02_2_HDI_MSI_Preprocess_5_110.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_111.png" src="_images/02_2_HDI_MSI_Preprocess_4_111.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_111.png" src="_images/02_2_HDI_MSI_Preprocess_5_111.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_112.png" src="_images/02_2_HDI_MSI_Preprocess_4_112.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_112.png" src="_images/02_2_HDI_MSI_Preprocess_5_112.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_113.png" src="_images/02_2_HDI_MSI_Preprocess_4_113.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_113.png" src="_images/02_2_HDI_MSI_Preprocess_5_113.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_114.png" src="_images/02_2_HDI_MSI_Preprocess_4_114.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_114.png" src="_images/02_2_HDI_MSI_Preprocess_5_114.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_115.png" src="_images/02_2_HDI_MSI_Preprocess_4_115.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_115.png" src="_images/02_2_HDI_MSI_Preprocess_5_115.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_116.png" src="_images/02_2_HDI_MSI_Preprocess_4_116.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_116.png" src="_images/02_2_HDI_MSI_Preprocess_5_116.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_117.png" src="_images/02_2_HDI_MSI_Preprocess_4_117.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_117.png" src="_images/02_2_HDI_MSI_Preprocess_5_117.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_118.png" src="_images/02_2_HDI_MSI_Preprocess_4_118.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_118.png" src="_images/02_2_HDI_MSI_Preprocess_5_118.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_119.png" src="_images/02_2_HDI_MSI_Preprocess_4_119.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_119.png" src="_images/02_2_HDI_MSI_Preprocess_5_119.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_120.png" src="_images/02_2_HDI_MSI_Preprocess_4_120.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_120.png" src="_images/02_2_HDI_MSI_Preprocess_5_120.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_121.png" src="_images/02_2_HDI_MSI_Preprocess_4_121.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_121.png" src="_images/02_2_HDI_MSI_Preprocess_5_121.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_122.png" src="_images/02_2_HDI_MSI_Preprocess_4_122.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_122.png" src="_images/02_2_HDI_MSI_Preprocess_5_122.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_123.png" src="_images/02_2_HDI_MSI_Preprocess_4_123.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_123.png" src="_images/02_2_HDI_MSI_Preprocess_5_123.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_124.png" src="_images/02_2_HDI_MSI_Preprocess_4_124.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_124.png" src="_images/02_2_HDI_MSI_Preprocess_5_124.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_125.png" src="_images/02_2_HDI_MSI_Preprocess_4_125.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_125.png" src="_images/02_2_HDI_MSI_Preprocess_5_125.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_126.png" src="_images/02_2_HDI_MSI_Preprocess_4_126.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_126.png" src="_images/02_2_HDI_MSI_Preprocess_5_126.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_127.png" src="_images/02_2_HDI_MSI_Preprocess_4_127.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_127.png" src="_images/02_2_HDI_MSI_Preprocess_5_127.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_128.png" src="_images/02_2_HDI_MSI_Preprocess_4_128.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_128.png" src="_images/02_2_HDI_MSI_Preprocess_5_128.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_129.png" src="_images/02_2_HDI_MSI_Preprocess_4_129.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_129.png" src="_images/02_2_HDI_MSI_Preprocess_5_129.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_130.png" src="_images/02_2_HDI_MSI_Preprocess_4_130.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_130.png" src="_images/02_2_HDI_MSI_Preprocess_5_130.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_131.png" src="_images/02_2_HDI_MSI_Preprocess_4_131.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_131.png" src="_images/02_2_HDI_MSI_Preprocess_5_131.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_132.png" src="_images/02_2_HDI_MSI_Preprocess_4_132.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_132.png" src="_images/02_2_HDI_MSI_Preprocess_5_132.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_133.png" src="_images/02_2_HDI_MSI_Preprocess_4_133.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_133.png" src="_images/02_2_HDI_MSI_Preprocess_5_133.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_134.png" src="_images/02_2_HDI_MSI_Preprocess_4_134.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_134.png" src="_images/02_2_HDI_MSI_Preprocess_5_134.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_135.png" src="_images/02_2_HDI_MSI_Preprocess_4_135.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_135.png" src="_images/02_2_HDI_MSI_Preprocess_5_135.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_136.png" src="_images/02_2_HDI_MSI_Preprocess_4_136.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_136.png" src="_images/02_2_HDI_MSI_Preprocess_5_136.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_137.png" src="_images/02_2_HDI_MSI_Preprocess_4_137.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_137.png" src="_images/02_2_HDI_MSI_Preprocess_5_137.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_138.png" src="_images/02_2_HDI_MSI_Preprocess_4_138.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_138.png" src="_images/02_2_HDI_MSI_Preprocess_5_138.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_139.png" src="_images/02_2_HDI_MSI_Preprocess_4_139.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_139.png" src="_images/02_2_HDI_MSI_Preprocess_5_139.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_140.png" src="_images/02_2_HDI_MSI_Preprocess_4_140.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_140.png" src="_images/02_2_HDI_MSI_Preprocess_5_140.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_141.png" src="_images/02_2_HDI_MSI_Preprocess_4_141.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_141.png" src="_images/02_2_HDI_MSI_Preprocess_5_141.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_142.png" src="_images/02_2_HDI_MSI_Preprocess_4_142.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_142.png" src="_images/02_2_HDI_MSI_Preprocess_5_142.png" />
 </div>
 </div>
 <div class="nboutput docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_143.png" src="_images/02_2_HDI_MSI_Preprocess_4_143.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_143.png" src="_images/02_2_HDI_MSI_Preprocess_5_143.png" />
 </div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/02_2_HDI_MSI_Preprocess_4_144.png" src="_images/02_2_HDI_MSI_Preprocess_4_144.png" />
+<img alt="_images/02_2_HDI_MSI_Preprocess_5_144.png" src="_images/02_2_HDI_MSI_Preprocess_5_144.png" />
 </div>
 </div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-</div>
+</section>
 </section>
 
 
@@ -7702,7 +7668,7 @@ Exporting /opt/miaaim-20220912-TMA4/data/ROI070_PROSTATE_TMA070/docs/provenance/
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="02_1_MSI_ExportHDF5.html" class="btn btn-neutral float-left" title="MSI Export to HDF5" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="03_HE_preprocess_TIFF.html" class="btn btn-neutral float-right" title="HE TMA core extraction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="03_HE_preprocess_TIFF.html" class="btn btn-neutral float-right" title="HE TMA Core Extraction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

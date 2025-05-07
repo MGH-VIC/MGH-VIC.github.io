@@ -34,7 +34,7 @@ Image Preprocessing
 
 2. The first step of the pipeline is processing each image so that they can
 be aligned later in the pipeline. To process the images for TMA013,
-reference and run the following jupyter notebooks. .ipynb versions of these notebooks can be downloaded `here <https://github.com/MGH-VIC/MGH-VIC.github.io/tree/main/docs>`_:
+reference and run the following jupyter notebooks. .ipynb versions of these notebooks can be downloaded `here <https://github.com/MGH-VIC/MGH-VIC.github.io/tree/main/source>`_:
 
 
 `01_HDI_Preprocessing.ipynb <https://mgh-vic.github.io/01_HDI_IMC_Preprocessing.html>`_
@@ -60,16 +60,16 @@ Image Registration
 4. After processing each of the images, use the following jupyter notebooks/python scripts to register
 the moving image to the fixed image. In the notebooks for 04_ilastik, either of these can be run, depending on if you want to run ilastik headless or not:
 
-`04_1_ilastikTraining.ipynb <https://mgh-vic.github.io/04_1_ilastikTraining.html>`_
+`04_ilastikTraining.ipynb <https://mgh-vic.github.io/04_ilastikTraining.html>`_
 
-`04_2_ilastikHeadless.ipynb <https://mgh-vic.github.io/04_2_ilastikHeadless.html>`_
+`05_ilastikHeadless.ipynb <https://mgh-vic.github.io/05_ilastikHeadless.html>`_
 
-`05_HDI_Registration.ipynb <https://mgh-vic.github.io/05_HDI_Registration.html>`_
+`06_HDI_Registration.ipynb <https://mgh-vic.github.io/06_HDI_Registration.html>`_
 
 Image Segmentation
 ------------------
 5. After registering the images, perform nuclei and membrane-based segmentation and quantile scaling with the following jupyter notebook:
 
-`06_HDI_Segmentation.ipynb <https://mgh-vic.github.io/06_HDI_Segmentation.html>`_
+`07_1_Quant.ipynb <https://mgh-vic.github.io/07_1_Quant.html>`_
 
 `07_1_Quant.ipynb <https://mgh-vic.github.io/07_1_Quant.html>`_

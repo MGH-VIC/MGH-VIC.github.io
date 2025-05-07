@@ -24,8 +24,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="HDI Segmentation" href="06_HDI_Segmentation.html" />
-    <link rel="prev" title="Ilastik run without interface" href="04_2_ilastikHeadless.html" /> 
+    <link rel="next" title="HDI Segmentation" href="07_HDI_Segmentation.html" />
+    <link rel="prev" title="Ilastik Generate" href="05_ilastikHeadless.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,7 +47,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Nextflow User Guide / Tutorials</span></p>
+              <p class="caption" role="heading"><span class="caption-text">User Guide / Tutorials</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="installation.html#linux-os-x">Linux / OS X</a></li>
@@ -90,23 +90,10 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="parameters.html">Parameter Reference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="parameters.html#nextflow">Nextflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="parameters.html#hdiprep">HDIprep</a></li>
 <li class="toctree-l2"><a class="reference internal" href="parameters.html#hdireg">HDIreg</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#docker-singularity-containers">Docker/Singularity Containers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#resource-allocation">Resource Allocation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="configuration.html#memory">Memory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="configuration.html#cpu">CPU</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#preset-resource-allocation-options">Preset Resource Allocation Options</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="provenance.html">Provenance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="contributing.html#adding-imaging-modalities">Adding Imaging Modalities</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="contributing.html#importing-new-modalities-adding-file-formats">Importing New Modalities / Adding File Formats</a></li>
@@ -117,15 +104,35 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Quick Start Notebooks</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html">IMC HDIpreprocessing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_1_MSI_ExportHDF5.html">MSI Export to HDF5</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_2_HDI_MSI_Preprocess.html">MSI HDIpreprocessing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_HE_preprocess_TIFF.html">HE TMA core extraction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_1_ilastikTraining.html">Training Ilastik</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_2_ilastikHeadless.html">Ilastik run without interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html">IMC HDIpreprocessing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html#Set-paths-to-data-and-get-marker-information">Set paths to data and get marker information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html#Preprocessing-and-quality-control">Preprocessing and quality control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html#Create-Mask">Create Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html#Fill-Mask">Fill Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html#Apply-Mask-to-IMC-image">Apply Mask to IMC image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html#Create-UMAP-embedding-of-masked-IMC-image">Create UMAP embedding of masked IMC image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="01_HDI_IMC_Preprocessing.html#Export-Embedding">Export Embedding</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_1_MSI_ExportHDF5.html">MSI Export to HDF5</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_1_MSI_ExportHDF5.html#Set-paths-to-csv-data-with-root-mean-square-normalized-MSI-data">Set paths to csv data with root mean square normalized MSI data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_1_MSI_ExportHDF5.html#Convert-to-HDF5-and-export">Convert to HDF5 and export</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_2_HDI_MSI_Preprocess.html">MSI HDIpreprocessing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_2_HDI_MSI_Preprocess.html#Set-paths-to-data-and-get-marker-information">Set paths to data and get marker information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_2_HDI_MSI_Preprocess.html#Iterate-Through-Cores-and-Extract-Data">Iterate Through Cores and Extract Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03_HE_preprocess_TIFF.html">HE TMA Core Extraction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="03_HE_preprocess_TIFF.html#Read-Core-Labels-and-Export-Individual-ROIs">Read Core Labels and Export Individual ROIs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04_ilastikTraining.html">Training Ilastik</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_ilastikHeadless.html">Ilastik Generate</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">HDI Registration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_HDI_Segmentation.html">HDI Segmentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_1_Quant.html">Single Cell Quantification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_HDI_Segmentation.html">HDI Segmentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_Quant.html">Single Cell Quantification</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">MIAAIM in Python</span></p>
 <ul>
@@ -152,32 +159,9 @@
 <li class="toctree-l2"><a class="reference internal" href="python-workflows.html#cross-system-tissue-information-transfer-i-patchmap">Cross-System/Tissue Information Transfer (i-PatchMAP)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="jupyter.html">Jupyter Notebook Zoo</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="jupyter.html#image-preparation-hdiprep">Image Preparation (HDIprep)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="jupyter.html#image-registration-hdireg">Image Registration (HDIreg)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="jupyter.html#tissue-state-modelling-patchmap">Tissue State Modelling (PatchMAP)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="api.html#image-preparation-hdiprep">Image Preparation (HDIprep)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="api.html#hdi-prep">hdi_prep</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api.html#utils">utils</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#image-registration-hdireg">Image Registration (HDIreg)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="api.html#elastix">elastix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api.html#transformix">transformix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api.html#id1">utils</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#tissue-state-modeling-patchmap">Tissue State Modeling (PatchMAP)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#cross-system-tissue-information-transfer-i-patchmap">Cross-System/Tissue Information Transfer (i-PatchMAP)</a></li>
-</ul>
-</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Background on MIAAIM</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="elastix.html">Elastix Basics</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="elastix.html#registration-parameter-files-elastix">Registration Parameter Files (Elastix)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="elastix.html#multi-channel-input">Multi-channel Input</a></li>
@@ -190,13 +174,6 @@
 </ul>
 </li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Roadmap</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="roadmap.html">MIAAIM Roadmap</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="roadmap.html#miaaim-0-0-1">MIAAIM 0.0.1</a></li>
-</ul>
-</li>
-</ul>
 <p class="caption" role="heading"><span class="caption-text">Contributing</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a><ul>
@@ -206,10 +183,6 @@
 </li>
 </ul>
 </li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">FAQs</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Contact</span></p>
 <ul>
@@ -244,7 +217,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">HDI Registration</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/JoshuaHess12/miaaim/blob/0.0.105_HDI_Registration.ipynb" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/JoshuaHess12/miaaim/blob/0.0.106_HDI_Registration.ipynb" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -254,6 +227,7 @@
              
   <section id="HDI-Registration">
 <h1>HDI Registration<a class="headerlink" href="#HDI-Registration" title="Link to this heading"></a></h1>
+<p>Extract cores from TMA using morphological operations</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -411,8 +385,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="04_2_ilastikHeadless.html" class="btn btn-neutral float-left" title="Ilastik run without interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="06_HDI_Segmentation.html" class="btn btn-neutral float-right" title="HDI Segmentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="05_ilastikHeadless.html" class="btn btn-neutral float-left" title="Ilastik Generate" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="07_HDI_Segmentation.html" class="btn btn-neutral float-right" title="HDI Segmentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

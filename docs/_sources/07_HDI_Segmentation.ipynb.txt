@@ -30991,14 +30991,6 @@
     "    segmenter.ExportSegmentationMask()\n",
     "    segmenter.ExportSegmentationMaskQC()"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "71e90615",
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {

@@ -5,7 +5,9 @@
    "id": "47f1fb81-560f-42bf-a23f-64874581363b",
    "metadata": {},
    "source": [
-    "# Training Ilastik"
+    "# Training Ilastik\n",
+    "\n",
+    "- Generates and Exports Training Crops"
    ]
   },
   {
@@ -1465,14 +1467,6 @@
     "        nonzero_fraction=0.05\n",
     "        )"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "71e90615",
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {

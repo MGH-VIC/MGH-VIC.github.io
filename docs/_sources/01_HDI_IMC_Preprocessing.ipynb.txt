@@ -5,7 +5,15 @@
    "id": "e371715b",
    "metadata": {},
    "source": [
-    "# IMC HDIpreprocessing"
+    "# IMC HDIpreprocessing\n",
+    "\n",
+    "This preprocessing notebook:\n",
+    "- Loads the IMC image\n",
+    "- Creates a mask\n",
+    "- Fills the mask\n",
+    "- Applies the mask to the image\n",
+    "- Creates the UMAP embedding\n",
+    "- Exports the embedding"
    ]
   },
   {
@@ -52,9 +60,7 @@
    "id": "358950a7",
    "metadata": {},
    "source": [
-    "------\n",
-    "### Set paths to data and get marker information\n",
-    "------"
+    "### Set paths to data and get marker information"
    ]
   },
   {
@@ -87,9 +93,7 @@
    "id": "738c821c",
    "metadata": {},
    "source": [
-    "------\n",
-    "### Preprocessing and quality control\n",
-    "------"
+    "### Preprocessing and quality control"
    ]
   },
   {
@@ -191,6 +195,14 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "id": "0ee9aa2b-ead1-4d2b-83ca-4b115c5b2572",
+   "metadata": {},
+   "source": [
+    "### Create Mask"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": 8,
    "id": "6c9f3063",
@@ -210,6 +222,14 @@
    "source": [
     "# check processed mask\n",
     "imc.PlotProcessedImage()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "345eec53-444c-45a0-ae58-5e3c7882f1ae",
+   "metadata": {},
+   "source": [
+    "### Fill Mask"
    ]
   },
   {
@@ -242,6 +262,14 @@
     "imc.Fill()\n",
     "# check processed mask\n",
     "imc.PlotProcessedImage()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "84a063de-0267-4320-9bd2-cb119d519211",
+   "metadata": {},
+   "source": [
+    "### Apply Mask to IMC image"
    ]
   },
   {
@@ -304,6 +332,14 @@
     "    padding=(100,100),\n",
     "    target_size=None\n",
     "    )"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fe50b46f-4bd6-4a61-8ad3-8c2d8a2fb2cd",
+   "metadata": {},
+   "source": [
+    "### Create UMAP embedding of masked IMC image"
    ]
   },
   {
@@ -437,6 +473,14 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "id": "b59f66ff-4057-4d22-9cd1-2f916e039084",
+   "metadata": {},
+   "source": [
+    "### Export Embedding"
+   ]
+  },
+  {
    "cell_type": "code",
    "execution_count": 13,
    "id": "aff122e9",
@@ -508,14 +552,6 @@
     "# export documentation and QC images\n",
     "imc.QC()"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "e440c211",
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {

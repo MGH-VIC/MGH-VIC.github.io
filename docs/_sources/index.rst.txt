@@ -12,7 +12,7 @@ MIAAIM: multi-modal image alignment and analysis by information manifolds
    .. container:: leftside
 
       .. figure:: images/2025_Figure1.png
-         :width: 90%
+         :width: 80%
 
    .. container:: rightside
 
@@ -23,39 +23,24 @@ MIAAIM: multi-modal image alignment and analysis by information manifolds
 
       MIAAIM was developed by
       `Joshua Hess <https://github.com/JoshuaHess12>`_ at
-      the `Vaccine and Immunotherapy Center at MHG <http://advancingcures.org>`_
+      the `Vaccine and Immunotherapy Center at MGB <http://advancingcures.org>`_
       in the labs of `Dr. Ruxandra Sîrbulescu <http://advancingcures.org/sirbulescu-lab/>`_
       and `Dr. Patrick Reeves <http://advancingcures.org/reeves-lab/>`_.
-      It is written in `Nextflow <https://www.nextflow.io>`_ with containerized
-      workflows to enable reproducible
-      image data integration across computing architectures.
 
       Before using this software, please read the relevant background for each
       workflow in the pipeline in the :ref:`Workflows <Workflows to Workflows>` section.
       For a complete description of the project, check our preprint.
 
-.. note::
-   MIAAIM is under active development! To update your current version, pull the
-   latest release from GitHub with :code:`nextflow pull JoshuaHess12/miaaim`.
-   If you pull a new version, please visit for the latest usage instructions for
-   new workflows! We will try to make all updated versions backwards compatible
-   with previous versions. If you are having trouble implementing a
-   pipeline that you are used to after updating your MIAAIM version,
-   feel free to :ref:`contact <Contact Information to contact>`
-   us so we can help.
 
 .. toctree::
    :maxdepth: 3
-   :caption: Nextflow User Guide / Tutorials
+   :caption: User Guide / Tutorials
 
    installation
    quick_start
    directory
    workflows
    parameters
-   tutorials
-   configuration
-   provenance
    contributing
 
 .. toctree::
@@ -66,11 +51,11 @@ MIAAIM: multi-modal image alignment and analysis by information manifolds
    02_1_MSI_ExportHDF5
    02_2_HDI_MSI_Preprocess
    03_HE_preprocess_TIFF
-   04_1_ilastikTraining
-   04_2_ilastikHeadless
-   05_HDI_Registration
-   06_HDI_Segmentation
-   07_1_Quant
+   04_ilastikTraining
+   05_ilastikHeadless
+   06_HDI_Registration
+   07_HDI_Segmentation
+   08_Quant
 
 .. toctree::
    :maxdepth: 2
@@ -78,33 +63,18 @@ MIAAIM: multi-modal image alignment and analysis by information manifolds
 
    python
    python-workflows
-   jupyter
-   api
 
 .. toctree::
    :maxdepth: 2
    :caption: Background on MIAAIM
 
-   background
    elastix
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Roadmap
-
-   roadmap
 
 .. toctree::
    :maxdepth: 2
    :caption: Contributing
 
    contributing
-
-.. toctree::
-   :maxdepth: 2
-   :caption: FAQs
-
-   faqs
 
 .. toctree::
    :maxdepth: 2
