@@ -34,7 +34,7 @@ Image Preprocessing
 
 2. The first step of the pipeline is processing each image so that they can
 be aligned later in the pipeline. To process the images for TMA013,
-reference and run the following jupyter notebooks. .ipynb versions of these notebooks can be downloaded `here <https://github.com/MGH-VIC/MGH-VIC.github.io/tree/main/docs>`_:
+reference and run the following jupyter notebooks. .ipynb versions of these notebooks can be downloaded `here <https://github.com/MGH-VIC/MGH-VIC.github.io/tree/main/source>`_:
 
 
 `01_HDI_Preprocessing.ipynb <https://mgh-vic.github.io/01_HDI_IMC_Preprocessing.html>`_
